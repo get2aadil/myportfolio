@@ -4,8 +4,7 @@ import React, {useState,useEffect} from "react"
 const ChangingRolesComponent = () => {
     const roleNames = [
         "Backend Developer",
-        "Software Engineer",
-        "Data Scientist"
+        "Software Engineer"
     ];
 
     const [currentRoleIndex, setCurrentRoleIndex] = useState(1);

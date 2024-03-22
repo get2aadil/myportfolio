@@ -11,22 +11,37 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Use the latest version of actions/checkout
       - name: Checkout repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
+      # Update to use Node.js 20 and the latest version of actions/setup-node
       - name: Setup Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 20
+          cache: 'npm'
 
+      # It's recommended to use the actions/cache for better control over caching
+      - name: Cache node modules
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      # Install dependencies using npm ci instead of npm install for a cleaner install
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        run: npm ci
 
+      # Build your project
       - name: Build project
         run: npm run build
 
+      # Upload your production-ready build files
       - name: Upload production-ready build files
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: production-files
           path: ./dist
@@ -38,12 +53,14 @@ jobs:
     if: github.ref == 'refs/heads/main'
 
     steps:
+      # Download the artifact from the build job
       - name: Download artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: production-files
           path: ./dist
 
+      # Deploy to GitHub Pages using the latest version of peaceiris/actions-gh-pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:

@@ -22,7 +22,7 @@ function useMousePosition() {
 
 function Particles({
 	className = "",
-	quantity = 1500,
+	quantity = 5000,
 	staticity = 50,
 	ease = 50,
 	refresh = false,

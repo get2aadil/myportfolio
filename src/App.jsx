@@ -254,6 +254,34 @@ function App() {
               <div className="mt-12 relative before:absolute before:top-0 before:left-16 before:rounded-full before:bottom-10 sm:before:bottom-2 before:w-1 before:bg-white">
                 <div className="pl-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
                   <h3 className="absolute left-0 text-lg font-semibold">
+                    2024
+                  </h3>
+                  <p>
+                    <b>Software Engineer Intern - Summer 2024</b>
+                    <br />
+                    <div className="block mt-5 mb-5 justified-text">
+                      I am currently pursuing a role as a Software Engineer
+                      Intern at Customized Energy Solutions in Philadelphia,
+                      USA. My responsibilities include implementing
+                    </div>
+                    <span className="block ml-5 mb-5 justified-text">
+                      &#8226; Implementing RAG architecture with OpenAI's vector
+                      store and Files, reducing support queries to engineers by
+                      60%
+                      <br />
+                      &#8226; Developing MongoDB Triggers to fetch data,
+                      generate JSON files, and push them using a custom
+                      multi-part form approach
+                      <br />
+                      &#8226; Applying AI and ML techniques to optimize data
+                      retrieval and augmentation, enhancing assistant accuracy
+                      and user experience
+                      <br />
+                    </span>
+                  </p>
+                </div>
+                <div className="pl-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
+                  <h3 className="absolute left-0 text-lg font-semibold">
                     2023
                   </h3>
                   <p>

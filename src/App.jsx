@@ -5,6 +5,7 @@ import Project1 from "./assets/project1.png";
 import Project2 from "./assets/project2.png";
 import Project3 from "./assets/project3.png";
 import Project4 from "./assets/project4.png";
+import Project5 from "./assets/project5.png";
 import Facebook from "./assets/facebook.svg";
 import LinkedIn from "./assets/linkedin.svg";
 import Instagram from "./assets/instagram.svg";
@@ -140,7 +141,7 @@ function App() {
                     in tech, from developing robust software solutions to
                     streamlining system operations. My toolbox is filled with a
                     variety of skills, whatever gets the job done right.
-                    Currently, I’m leveling up with a Master’s in Computer
+                    Currently, I'm leveling up with a Master's in Computer
                     Science at California State University Chico, diving deep
                     into advanced tech topics. I love tackling tough problems,
                     always with a clear focus on making things work better. My
@@ -182,43 +183,41 @@ function App() {
             <div className="container m-auto px-4">
               <h2 className="text-2xl font-semibold">Technologies</h2>
               <div className="mt-14">
-                <div>
-                  <div className="flex justify-between items-center">
-                    <h2 className="font-semibold">C#, .NET, Java, C++ </h2>
-                    <p className="text-gray-500">Advanced</p>
-                  </div>
-                  <span className="w-full h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+                <div className="flex justify-between items-center">
+                  <h2 className="font-semibold">C#, .NET, Java, C++ </h2>
+                  <p className="text-gray-500">Advanced</p>
                 </div>
-                <div className="mt-8">
-                  <div className="flex justify-between items-center">
-                    <h2 className="font-semibold">
-                      HTML, CSS, Bootstrap, JavaScript, JQuery
-                    </h2>
-                    <p className="text-gray-500">Advanced</p>
-                  </div>
-                  <span className="w-full h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+                <span className="w-full h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+              </div>
+              <div className="mt-8">
+                <div className="flex justify-between items-center">
+                  <h2 className="font-semibold">
+                    HTML, CSS, Bootstrap, JavaScript, JQuery
+                  </h2>
+                  <p className="text-gray-500">Advanced</p>
                 </div>
-                <div className="mt-8">
-                  <div className="flex justify-between items-center">
-                    <h2 className="font-semibold">Python, SQL </h2>
-                    <p className="text-gray-500">Advanced</p>
-                  </div>
-                  <span className="w-[75%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+                <span className="w-full h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+              </div>
+              <div className="mt-8">
+                <div className="flex justify-between items-center">
+                  <h2 className="font-semibold">Python, SQL </h2>
+                  <p className="text-gray-500">Advanced</p>
                 </div>
-                <div className="mt-8">
-                  <div className="flex justify-between items-center">
-                    <h2 className="font-semibold">Angular</h2>
-                    <p className="text-gray-500">Advanced</p>
-                  </div>
-                  <span className="w-[50%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+                <span className="w-[75%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+              </div>
+              <div className="mt-8">
+                <div className="flex justify-between items-center">
+                  <h2 className="font-semibold">Angular</h2>
+                  <p className="text-gray-500">Advanced</p>
                 </div>
-                <div className="mt-8">
-                  <div className="flex justify-between items-center">
-                    <h2 className="font-semibold">React</h2>
-                    <p className="text-gray-500">Advanced</p>
-                  </div>
-                  <span className="w-[90%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+                <span className="w-[50%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+              </div>
+              <div className="mt-8">
+                <div className="flex justify-between items-center">
+                  <h2 className="font-semibold">React</h2>
+                  <p className="text-gray-500">Advanced</p>
                 </div>
+                <span className="w-[90%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
               </div>
             </div>
           </section>
@@ -277,6 +276,12 @@ function App() {
                       retrieval and augmentation, enhancing assistant accuracy
                       and user experience
                       <br />
+                      &#8226;Developed an automated web scraping service using Scrapy, 
+                      integrating with Amazon S3 and AWS Lambda to process and store data efficiently. 
+                      Designed the architecture to scrape data in parallel for each spider, enabling seamless scaling with minimal manual intervention.
+                      As the sole architect, designer, and developer, optimized the implementation process, 
+                      reducing team effort by 80%, making it a key component of the project.
+                      <br />
                     </span>
                   </p>
                 </div>
@@ -301,11 +306,21 @@ function App() {
                       <br />
                       &#8226; Applied Computer Vision
                       <br />
-                      &#8226; Advanced Data Structures and Algorithms
+                      &#8226; Artificial Intelligence
+                      <br />
+                      &#8226; Robotics and Machine Intelligence
+                      <br />
+                      &#8226; Software Design and Maintenance
                       <br />
                       &#8226; Mobile and Web Development
                       <br />
-                      &#8226; Software Design and Maintenance
+                      &#8226; Algorithms and Computability
+                      <br />
+                      &#8226; Advanced Data Structures and Algorithms
+                      <br />
+                      &#8226; Scalable Software Systems
+                      <br />
+                      &#8226; Cybersecurity
                     </span>
                   </p>
                 </div>
@@ -454,6 +469,75 @@ function App() {
                       }
                     >
                       Checkout GitHub
+                    </button>
+                  </div>
+                </div>
+
+                {/* Project 4: Chess Master */}
+                <div className="border border-gray-500 rounded-md p-5 flex-1">
+                  <img
+                    src={Project4}
+                    className="w-full h-auto"
+                    alt="Chess Master"
+                  />
+                  <h3 className="text-2xl font-semibold mt-8">
+                    Chess Master
+                  </h3>
+                  <p className="text-gray-400 text-sm mt-2 justified-text">
+                    Chess Master is an online multiplayer chess game that allows players to compete against each other in real-time. The game features a robust matchmaking system and a user-friendly interface. For more details, visit the GitHub repository.
+                  </p>
+                  <div className="flex mt-12 gap-2">
+                    <button
+                      className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500"
+                      onClick={() =>
+                        window.open(
+                          "https://github.com/get2aadil/chess_project",
+                          "_blank"
+                        )
+                      }
+                    >
+                      Checkout GitHub
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-10 mt-11">
+                {/* Project 5: Voice-Activated Object Navigation Robot */}
+                <div className="border border-gray-500 rounded-md p-5 flex-1">
+                  <img
+                    src={Project5}
+                    className="w-full h-auto"
+                    alt="Voice-Activated Object Navigation Robot"
+                  />
+                  <h3 className="text-2xl font-semibold mt-8">
+                    Voice-Activated Object Navigation Robot
+                  </h3>
+                  <p className="text-gray-400 text-sm mt-2 justified-text">
+                    This project, developed as part of CSCI 585 Robotics and Machine Intelligence at California State University, Chico, focuses on building a voice-activated robot that detects and navigates toward specified objects based on voice commands. The system integrates speech recognition, natural language processing (NLP), object detection, and navigation using ROS2 on a TurtleBot3 Waffle Pi.
+                  </p>
+                  <div className="flex mt-12 gap-2">
+                    <button
+                      className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500"
+                      onClick={() =>
+                        window.open(
+                          "https://github.com/get2aadil/robotics",
+                          "_blank"
+                        )
+                      }
+                    >
+                      Checkout GitHub
+                    </button>
+                    <button
+                      className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500"
+                      onClick={() =>
+                        window.open(
+                          "https://drive.google.com/drive/folders/1-5WzHlL9R6ly-ihHBvyknELdV5FMCE2Y?usp=drive_link", // Replace with your actual Google Drive link
+                          "_blank"
+                        )
+                      }
+                    >
+                      Watch Videos
                     </button>
                   </div>
                 </div>
